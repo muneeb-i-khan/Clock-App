@@ -1,0 +1,94 @@
+body{
+    background-image: url('Time.jpg');
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-face {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 100%;
+    border: 1px solid black;
+    position: relative;
+    /* background-color: rgba(206, 196, 196, 0.45); */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+}
+
+.clock {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    background-image: linear-gradient(27deg, brown, tan);
+
+
+}
+
+
+
+.hands {
+    /* width: 10rem;
+    height: 1px;
+    border: 1px solid green;
+    position: relative; */
+
+    width: 50%;
+    height: 8px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    /* transform: scale(0.5); */
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+#seconds {
+    transform: scale(2);
+    /* background-image: linear-gradient(20deg, gold, pink); */
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+}
+
+#minutes {
+    transform: scale(0.6);
+    /* background-color: blue; */
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+}
+
+#hour {
+    transform: scale(0.4);
+    /* background-color: black; */
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+}
